@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Weather Report</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> <!-- link for styles -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script> <!-- link for javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "jumbotron" style = "margin-bottom: 0px; color: white; background-color: grey;">
+		<h2 class = "text-center" style = "font-size: 50px; font-weight: 600;"> Get Current Weather</h2>
+	</div>
+
+	<div class = "container" id = "rowDiv">
+		<div class = "row" style = "margin-bottom: 20px;">
+
+			<div class = "newPow">
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h3 class = " card-title text-center text-primary">Enter City Name</h3>
+						<span id = "error"></span>
+					  <p class="card-text">
+						<div class = "row form-group form-inline" >
+							<input type = "text" name = "city" id = "city" class = "form-control" placeholder = "City Name">
+							<button id = "submitWeather" class = "btn btn-primary"> Search City</button>
+						</div>
+						<div class = "appendList" style = "float: left;">
+							<ul id ="searchedCities">
+				
+							</ul>
+						</div>
+					  </p>
+					  
+					</div>
+				  </div>
+            
+		</div>
+		
+	</div>
+</div>
+
+	<div id ="show">
+		<div class="row displayWeather">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h2 class="card-title">City: <span id="citycity"></span></h2>
+				  <p class="card-text">
+
+				<h2>Description: <span id="description_weather"></span></h2>
+				
+				<h2>Temperature: <span id="temperature"></span><span>&#8457;</span></h2>
+				
+				<h2>Humidity: <span id="humidity"></span><span>%</span></h2>
+				<h2>Wind Speed: <span id="wind_speed"></span><span> MPH</span></h2>
+				<h2>Coordinates (lon.,lat.): <span id="lon_lat"></span></h2>
+				<h2>UV Index: <span id="uv_index"></span></h2>
+				  </p>
+				  
+				</div>
+			  </div>
+			
+				
+				
+				
+			
+			
+			<div class = "futureWeather row1">
+				<h2> Five Day Forecast (temperature - humidity): </h2>
+					<div class = "column1">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title">24 hours later</h5>
+						  <p class="card-text"><span id ="sugarFat"></span></p>
+						  
+						</div>
+					  </div> </div>
+					<div class = "column1">
+					  <div class="card" style="width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title">48 hours later</h5>
+						  <p class="card-text"><span id ="sugarFat1"></span></p>
+						  
+						</div>
+					  </div></div>
+					  <div class = "column1">
+					  <div class="card" style="width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title">72 hours later</h5>
+						  <p class="card-text"><span id ="sugarFat2"></span></p>
+						  
+						</div>
+					  </div></div>
+					  <div class = "column1">
+					  <div class="card" style="width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title">96 hours later</h5>
+						  <p class="card-text"><span id ="sugarFat3"></span></p>
+						  
+						</div>
+					  </div></div>
+					<div class = "column1">
+					  <div class="card" style="width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title">120 hours later</h5>
+						  <p class="card-text"><span id ="sugarFat4"></span></p>
+						  
+						</div>
+					  </div></div>
+					
+					
+					
+					
+					
+					
+					
+				
+				</h2>
+			</div>
+		</div>
+
+	</div>
+
+	
+	
+  
+
+</body>
+</html>
+
+
+
